@@ -1,0 +1,41 @@
+" Colors {{{
+syntax enable 			" enable syntax processing
+colorscheme molokai 		" awesome colorscheme
+" }}}
+
+" Spaces & Tabs {{{
+set tabstop=4
+" }}}
+
+" UI Config {{{
+set number		" show line numbers
+set showcmd		" show command in bottom bar
+set cursorline		" highlight current line
+" }}}
+
+
+" Vundle {{{
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim' 			" (required) let Vundle manage Vundle
+
+"" --------------- Your Plugin Here ------------------------
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+"" ---------------------------------------------------------
+
+call vundle#end()
+filetype plugin indent on
+" }}}
+
+
+
+" vim-airline {{{
+let g:airline_theme='lessnoise'
+" }}}
+
+
+
