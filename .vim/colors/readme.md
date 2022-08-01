@@ -1,7 +1,6 @@
 
 Ex) install molokai colorscheme
-# git clone https://github.com/tomasr/molokai.git ~/.vim/colors
-# mv ~/.vim/colors/molokai/molokai.vim
-# rm -rf ~/.vim/colors/molokai
+## git clone https://github.com/tomasr/molokai.git ~/.vim/tmp; mv ~/.vim/tmp/molokai.vim ~/.vim/colors;
+
 
 
