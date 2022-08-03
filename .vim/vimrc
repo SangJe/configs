@@ -1,16 +1,39 @@
+language en_US.UTF-8
 " Colors {{{
 syntax enable 			" enable syntax processing
 colorscheme molokai 		" awesome colorscheme
 " }}}
 
+
 " Spaces & Tabs {{{
 set tabstop=4
 " }}}
+
 
 " UI Config {{{
 set number		" show line numbers
 set showcmd		" show command in bottom bar
 set cursorline		" highlight current line
+" }}}
+
+
+" Searching {{{
+set hlsearch   " highlight searches
+set incsearch  " incremental searching
+set ignorecase " searches are case insensitive
+set smartcase  " unless there is one capital letter
+"}}}
+
+
+" Wild {{{
+set wildmode=list:longest
+set wildmenu
+" }}}
+
+
+" SystemVerilog {{{
+au BufNewFile,BufRead *.sv so ~/.vim/syntax/verilog_systemverilog.vim
+au BufNewFile,BufRead *.svh so ~/.vim/syntax/verilog_systemverilog.vim
 " }}}
 
 
@@ -25,14 +48,15 @@ Plugin 'VundleVim/Vundle.vim' 			" (required) let Vundle manage Vundle
 "" --------------- Your Plugin Here ------------------------
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Yggdroot/indentLine'
+Plugin 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 "" ---------------------------------------------------------
 
 call vundle#end()
 filetype plugin indent on
 " }}}
 
-
-
+			
 " vim-airline {{{
 let g:airline_theme='lessnoise'
 " }}}
