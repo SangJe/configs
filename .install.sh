@@ -7,3 +7,4 @@ rm -rf ~/.vim/tmp/*;
 
 git clone https://github.com/tomasr/molokai.git ~/.vim/tmp/; 
 cp ~/.vim/tmp/colors/molokai.vim ~/.vim/colors;
+rm -rf ~/.vim/tmp;
